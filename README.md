@@ -17,8 +17,9 @@ Tink is an in-house developed easy-to-use front end framework for quick prototyp
 
 ### Install
 
-1. Go to the root of your project and type the following command in your terminal:
-   `bower install tink-skeleton-angular --save`
+1. Go to the root of your project and type one of the following commands in your terminal:
+   - `bower install tink-skeleton-angular --save`
+   - `npm install tink-skeleton-angular --save`
 
 2. Include `dist/tink-skeleton-angular.js` and its necessary dependencies in your project.
 
