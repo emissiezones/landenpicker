@@ -1,6 +1,6 @@
 # LEZ Landenpicker
 
-v1.0.0
+v0.1.1
 
 ## Hoe het te gebruiken
 

@@ -22,7 +22,7 @@
                 
                 function initialize() {
                     landenService.getAll().then(function(response){ 
-                        ctrl.landen = response.listOfLandCode;
+                        ctrl.landen = response.listOfLandCodeModel;
                     });
                 }
                 
@@ -38,7 +38,7 @@
     } catch (e) {
         module = angular.module('lez.landenpicker', []);
     }
-    module.factory('LezLandenService', ['BaseService', 'AppConfig', function (baseService, appConfig) {
+    module.factory('LezLandenService', ['BaseService', 'appConfig', function (baseService, appConfig) {
         var url = appConfig.apiUrl + "landen";
 
         function _getAll() {

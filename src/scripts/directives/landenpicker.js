@@ -22,7 +22,7 @@
                 
                 function initialize() {
                     landenService.getAll().then(function(response){ 
-                        ctrl.landen = response.listOfLandCode;
+                        ctrl.landen = response.listOfLandCodeModel;
                     });
                 }
                 
