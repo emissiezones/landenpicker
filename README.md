@@ -1,38 +1,28 @@
-# Tink skeleton Angular directive
+# LEZ Landenpicker
 
 v0.1.0
 
-## What is this repository for?
+## Hoe het te gebruiken
 
-The Tink Angular skeleton provides a scaffold for a directive or service that can easily work with Tink.
+```javascript
+"dependencies": {
+	"lez-landenpicker": "~1.0.0"
+ }
+```
+```javascript
+var app = angular.module('yourApp', [
+    'lez.landenpicker'
+]);
+```
 
-Tink is an in-house developed easy-to-use front end framework for quick prototyping and simple deployment of all kinds of websites and apps, keeping a uniform and consistent look and feel.
+Deze directive wordt gebruikt om een keuzelijst te tonen met landen/landcodes.
+Deze verwacht een string om als label te gaan gebruiken en een ngModel.
 
-## Setup
+```html
+<lez-landenpicker data-ng-model="geselecteerdLand"></lez-landenpicker>
+```
 
-### Prerequisites
-
-* nodeJS [http://nodejs.org/download/](http://nodejs.org/download/)
-* bower: `npm install -g bower`
-
-### Install
-
-1. Go to the root of your project and type the following command in your terminal:
-   `bower install tink-skeleton-angular --save`
-
-2. Include `dist/tink-skeleton-angular.js` and its necessary dependencies in your project.
-
-3. On http://tink.digipolis.be you will find all necessary documentation.
-
-## Contribution guidelines
-
-* If you're not sure, drop us a note
-* Fork this repo
-* Do your thing
-* Create a pull request
-
-## Who do I talk to?
-
-* Jasper Van Proeyen - jasper.vanproeyen@digipolis.be - Lead front-end
-* Tom Wuyts - tom.wuyts@digipolis.be - Lead UX
-* [The hand](https://www.youtube.com/watch?v=_O-QqC9yM28)
+Attr | Type | Default | Details
+--- | --- | --- | ---
+data-ng-model (verplicht) | `object` | `''` | In deze variabele wordt het gekozen land opgeslagen
+label (optioneel) | `string` | `'Kies een land'` | Deze tekst wordt getoond als label voor de dropdown

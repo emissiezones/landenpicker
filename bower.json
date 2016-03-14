@@ -1,9 +1,9 @@
 {
-  "name": "tink-skeleton-angular",
+  "name": "lez-landenpicker",
   "version": "0.1.0",
   "license": "MIT",
   "main": [
-    "dist/tink-skeleton-angular.js"
+    "dist/lez-landenpicker.js"
   ],
   "ignore": [
     ".*",
@@ -16,13 +16,6 @@
   ],
   "dependencies": {
     "angular": "~1.4.9",
-    "angular-resource": "~1.4.9",
-    "angular-cookies": "~1.4.9",
-    "angular-sanitize": "~1.4.9",
-    "angular-animate": "~1.4.9",
-    "angular-touch": "~1.4.9",
-    "angular-route": "~1.4.9",
-    "jquery": "~2.2.0",
     "tink-core": "latest"
   },
   "devDependencies": {

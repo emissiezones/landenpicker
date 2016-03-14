@@ -24,7 +24,7 @@ module.exports = function (grunt) {
     dist: 'dist',
     version: currentversion,
     module: require('./package.json').name,
-    domain: 'tink.skeleton'
+    domain: 'lez.landenpicker'
   };
 
   // Define the configuration for all the tasks
