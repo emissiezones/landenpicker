@@ -2,6 +2,10 @@
 
 v1.0.3
 
+## Hoe het eruit ziet
+
+![Screenshot](http://s11.postimg.org/ydtg8x7w3/Untitled.png)
+
 ## Hoe het te gebruiken
 
 ```javascript
@@ -17,6 +21,7 @@ var app = angular.module('yourApp', [
 
 Deze directive wordt gebruikt om een keuzelijst te tonen met landen/landcodes.
 Deze verwacht een string om als label te gaan gebruiken en een ngModel.
+
 
 ```html
 <lez-landenpicker data-ng-model="geselecteerdLand"></lez-landenpicker>
