@@ -56,7 +56,7 @@
   'use strict';
 
   $templateCache.put('templates/landenpicker.html',
-    "<div class=form-group> <label for=landenpicker>{{ctrl.label}}</label> <div class=select> <select id=landenpicker ng-model=ctrl.ngModel ng-options=\"land for land in ctrl.landen\"> <option value=\"\">{{ctrl.empty}}</option> </select> </div> </div>"
+    "<div class=form-group> <label for=landenpicker>{{ctrl.label}}</label> <div class=select> <select id=landenpicker ng-model=ctrl.ngModel ng-options=\"land.nl_short for land in ctrl.landen\"> <option value=\"\">{{ctrl.empty}}</option> </select> </div> </div>"
   );
 
 }]);
