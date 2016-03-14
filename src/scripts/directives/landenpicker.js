@@ -10,6 +10,7 @@
             restrict: 'E',
             scope: {
                 ngModel: '=',
+                empty: '@',
                 label: '@'
             },
             bindToController: true,
@@ -19,6 +20,7 @@
             controller: function() {
                 var ctrl = this;
                 ctrl.label = ctrl.label ? ctrl.label : "Kies een land";
+                ctrl.empty = ctrl.empty ? ctrl.empty : "- kies een land";
                 
                 function initialize() {
                     landenService.getAll().then(function(response){ 

@@ -1,8 +1,8 @@
 <div class="form-group">
   <label for="landenpicker">{{ctrl.label}}</label>
   <div class="select">
-    <select id="landenpicker" ng-options="land for land in ctrl.landen">
-      <option>- kies land</option>
+    <select id="landenpicker" ng-model="ctrl.ngModel" ng-options="land for land in ctrl.landen">
+      <option value="">{{ctrl.empty}}</option>
     </select>
   </div>
 </div>

@@ -1,12 +1,12 @@
 # LEZ Landenpicker
 
-v0.1.1
+v1.0.2
 
 ## Hoe het te gebruiken
 
 ```javascript
 "dependencies": {
-	"lez-landenpicker": "~1.0.0"
+	"lez-landenpicker": "~1.0.2"
  }
 ```
 ```javascript
@@ -25,4 +25,5 @@ Deze verwacht een string om als label te gaan gebruiken en een ngModel.
 Attr | Type | Default | Details
 --- | --- | --- | ---
 data-ng-model (verplicht) | `object` | `''` | In deze variabele wordt het gekozen land opgeslagen
-label (optioneel) | `string` | `'Kies een land'` | Deze tekst wordt getoond als label voor de dropdown
+data-label (optioneel) | `string` | `'Kies een land'` | Deze tekst wordt getoond als label voor de dropdown
+data-empty (optioneel) | `string` | `'- kies een land'` | Deze tekst wordt getoond als initieel geselecteerde optie met een lege waarde
