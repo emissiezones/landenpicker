@@ -6,7 +6,7 @@
         module = angular.module('lez.landenpicker', []);
     }
     module.factory('LezLandenService', ['BaseService', 'appConfig', function (baseService, appConfig) {
-        var url = appConfig.apiUrl + "landen";
+        var url = appConfig.apiUrl + "landen/actief";
 
         function _getAll() {
             return baseService.get(url);
