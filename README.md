@@ -1,6 +1,6 @@
 # LEZ Landenpicker
 
-v1.0.4
+v1.0.0
 
 ## Hoe het eruit ziet
 
@@ -10,7 +10,7 @@ v1.0.4
 
 ```javascript
 "dependencies": {
-	"lez-landenpicker": "~1.0.4"
+	"lez-landenpicker": "~1.0.0"
  }
 ```
 ```javascript
