@@ -32,3 +32,6 @@ Attr | Type | Default | Details
 data-ng-model (verplicht) | `object` | `''` | In deze variabele wordt het gekozen land opgeslagen
 data-label (optioneel) | `string` | `'Kies een land'` | Deze tekst wordt getoond als label voor de dropdown
 data-empty (optioneel) | `string` | `'- kies een land'` | Deze tekst wordt getoond als initieel geselecteerde optie met een lege waarde
+
+Deze directive gebruikt ook zijn eigen service, die op zijn beurt een base-url nodig heeft.
+Die wordt opgehaald uit de `appConfig.apiUrl`. Zorg er dus voor dat deze `apiUrl` property op een `appConfig`-constant bestaat en dat deze constant geregistreerd is op je app-module.
