@@ -10,6 +10,7 @@
             restrict: 'E',
             scope: {
                 ngModel: '=',
+                taal: '@',
                 empty: '@',
                 label: '@'
             },
@@ -21,6 +22,7 @@
                 var ctrl = this;
                 ctrl.label = ctrl.label ? ctrl.label : "Kies een land";
                 ctrl.empty = ctrl.empty ? ctrl.empty : "- kies een land";
+                ctrl.taal = ctrl.taal ? ctrl.taal.toLowerCase() : "nl";
                 
                 function initialize() {
                     landenService.getAll().then(function(response){ 
@@ -56,7 +58,7 @@
   'use strict';
 
   $templateCache.put('templates/landenpicker.html',
-    "<div class=form-group> <label for=landenpicker>{{ctrl.label}}</label> <div class=select> <select id=landenpicker ng-model=ctrl.ngModel ng-options=\"land.nl_short for land in ctrl.landen\"> <option value=\"\">{{ctrl.empty}}</option> </select> </div> </div>"
+    "<div class=form-group> <label for=landenpicker>{{ctrl.label}}</label> <div class=select> <select id=landenpicker ng-model=ctrl.ngModel ng-options=\"land.isoalpha2 as land.{{ctrl.taal}}_short for land in ctrl.landen\"> <option value=\"\">{{ctrl.empty}}</option> </select> </div> </div>"
   );
 
 }]);
