@@ -1,7 +1,7 @@
 {
   "name": "lez-landenpicker",
   "description": "Landenpicker voor LageEmissieZones",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -24,3 +24,7 @@ Initial release
 
 - ngModel is nu de ISO alpha-2 code van een land i.p.v. een land-object
 - taal-attribuut toegevoegd om de landen in verschillende talen te zien (default nl)
+
+## [1.1.2] - 2016-04-05
+
+- waardes worden gesorteerd adhv gekozen taal
