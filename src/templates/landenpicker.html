@@ -1,7 +1,7 @@
 <div class="form-group">
   <label for="landenpicker">{{ctrl.label}}</label>
   <div class="select">
-    <select id="landenpicker" ng-model="ctrl.ngModel" ng-options="land.nl_short for land in ctrl.landen">
+    <select id="landenpicker" ng-model="ctrl.ngModel" ng-options="land.isoalpha2 as land.{{ctrl.taal}}_short for land in ctrl.landen">
       <option value="">{{ctrl.empty}}</option>
     </select>
   </div>

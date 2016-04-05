@@ -1,6 +1,6 @@
 # LEZ Landenpicker
 
-v1.0.0
+v1.1.0
 
 ## Hoe het eruit ziet
 
@@ -10,7 +10,7 @@ v1.0.0
 
 ```javascript
 "dependencies": {
-	"lez-landenpicker": "~1.0.0"
+	"lez-landenpicker": "~1.1.0"
  }
 ```
 ```javascript
@@ -29,7 +29,8 @@ Deze verwacht een string om als label te gaan gebruiken en een ngModel.
 
 Attr | Type | Default | Details
 --- | --- | --- | ---
-data-ng-model (verplicht) | `object` | `''` | In deze variabele wordt het gekozen land opgeslagen
+data-ng-model (verplicht) | `object` | `''` | In deze variabele wordt de ISO alpha-2 code van het gekozen land opgeslagen
+data-taal (optioneel) | `string` | `'nl'` | Geef een taal-code mee om de landen in een bepaalde taal te zien (nl, de, en, fr)
 data-label (optioneel) | `string` | `'Kies een land'` | Deze tekst wordt getoond als label voor de dropdown
 data-empty (optioneel) | `string` | `'- kies een land'` | Deze tekst wordt getoond als initieel geselecteerde optie met een lege waarde
 

@@ -19,3 +19,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0] - 2016-03-14
 
 Initial release
+
+## [1.1.0] - 2016-04-05
+
+- ngModel is nu de ISO alpha-2 code van een land i.p.v. een land-object
+- taal-attribuut toegevoegd om de landen in verschillende talen te zien (default nl)

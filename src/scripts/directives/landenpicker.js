@@ -10,6 +10,7 @@
             restrict: 'E',
             scope: {
                 ngModel: '=',
+                taal: '@',
                 empty: '@',
                 label: '@'
             },
@@ -21,6 +22,7 @@
                 var ctrl = this;
                 ctrl.label = ctrl.label ? ctrl.label : "Kies een land";
                 ctrl.empty = ctrl.empty ? ctrl.empty : "- kies een land";
+                ctrl.taal = ctrl.taal ? ctrl.taal.toLowerCase() : "nl";
                 
                 function initialize() {
                     landenService.getAll().then(function(response){ 
