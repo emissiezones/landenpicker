@@ -28,3 +28,7 @@ Initial release
 ## [1.1.2] - 2016-04-05
 
 - waardes worden gesorteerd adhv gekozen taal
+
+## [1.1.5] - 2016-04-05
+
+- ng-change added.

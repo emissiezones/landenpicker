@@ -1,7 +1,7 @@
 <div class="form-group">
-  <label for="landenpicker">{{ctrl.label}}</label>
+  <label for="landenpicker" ng-if="ctrl.label.length > 0">{{ctrl.label}}</label>
   <div class="select">
-    <select id="landenpicker" ng-model="ctrl.ngModel" ng-options="land.isoAlpha2 as land.{{ctrl.taal}}_short for land in ctrl.landen | orderBy:'{{ctrl.taal}}_short'">
+    <select id="landenpicker" ng-change="ctrl.ngChange" ng-model="ctrl.ngModel" ng-options="land.isoAlpha2 as land.{{ctrl.taal}}_short for land in ctrl.landen | orderBy:'{{ctrl.taal}}_short'">
       <option value="">{{ctrl.empty}}</option>
     </select>
   </div>

@@ -9,6 +9,7 @@
         return {
             restrict: 'E',
             scope: {
+				ngChange: '=',
                 ngModel: '=',
                 taal: '@',
                 empty: '@',
@@ -59,9 +60,9 @@
 
   $templateCache.put('templates/landenpicker.html',
     "<div class=form-group>\n" +
-    "<label for=landenpicker>{{ctrl.label}}</label>\n" +
+    "<label for=landenpicker ng-if=\"ctrl.label.length > 0\">{{ctrl.label}}</label>\n" +
     "<div class=select>\n" +
-    "<select id=landenpicker ng-model=ctrl.ngModel ng-options=\"land.isoAlpha2 as land.{{ctrl.taal}}_short for land in ctrl.landen | orderBy:'{{ctrl.taal}}_short'\">\n" +
+    "<select id=landenpicker ng-change=ctrl.ngChange ng-model=ctrl.ngModel ng-options=\"land.isoAlpha2 as land.{{ctrl.taal}}_short for land in ctrl.landen | orderBy:'{{ctrl.taal}}_short'\">\n" +
     "<option value=\"\">{{ctrl.empty}}</option>\n" +
     "</select>\n" +
     "</div>\n" +

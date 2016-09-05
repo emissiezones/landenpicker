@@ -404,7 +404,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'karma:build',
     'clean',
     'ngtemplates',
     'replace',
