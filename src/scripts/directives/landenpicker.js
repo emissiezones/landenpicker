@@ -13,7 +13,8 @@
                 ngModel: '=',
                 taal: '@',
                 empty: '@',
-                label: '@'
+                label: '@',
+                selectClass: '@'
             },
             bindToController: true,
             controllerAs: 'ctrl',

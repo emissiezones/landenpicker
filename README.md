@@ -1,6 +1,6 @@
 # LEZ Landenpicker
 
-v1.1.5
+v1.1.6
 
 ## Hoe het eruit ziet
 
@@ -10,7 +10,7 @@ v1.1.5
 
 ```javascript
 "dependencies": {
-	"lez-landenpicker": "~1.1.5"
+	"lez-landenpicker": "~1.1.6"
  }
 ```
 ```javascript
@@ -33,6 +33,7 @@ data-ng-model (verplicht) | `object` | `''` | In deze variabele wordt de ISO alp
 data-taal (optioneel) | `string` | `'nl'` | Geef een taal-code mee om de landen in een bepaalde taal te zien (nl, de, en, fr)
 data-label (optioneel) | `string` | `'Kies een land'` | Deze tekst wordt getoond als label voor de dropdown
 data-empty (optioneel) | `string` | `'- kies een land'` | Deze tekst wordt getoond als initieel geselecteerde optie met een lege waarde
+data-select-class (optioneel) | `string` | `''` | Kan gebruikt worden om extra klasses toe te voegen aan de `<select>` tag
 
 Deze directive gebruikt ook zijn eigen service, die op zijn beurt een base-url nodig heeft.
 Die wordt opgehaald uit de `appConfig.apiUrl`. Zorg er dus voor dat deze `apiUrl` property op een `appConfig`-constant bestaat en dat deze constant geregistreerd is op je app-module.

@@ -29,6 +29,10 @@ Initial release
 
 - waardes worden gesorteerd adhv gekozen taal
 
-## [1.1.5] - 2016-04-05
+## [1.1.5] - 2016-09-06
 
 - ng-change added.
+
+## [1.1.6] - 2016-09-08
+
+- Mogelijkheid tot toevoegen van extra classes aan `select` tag
